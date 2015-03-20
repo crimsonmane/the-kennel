@@ -16,8 +16,7 @@ sudo inxi -U ;
  grep -Ei 'error|fail|cups|colord' /var/log/syslog ;
  echo ;
  date ;
-) > ~/trouble-shoot-history.txt ;
- echo "Done, the log has been saved to ~/trouble-shoot-history.txt"
+) > ~/trouble-shoot-history.txt && echo "Done, the log has been saved to ~/trouble-shoot-history.txt" || echo "An error was encountered."
  `
 ***
 [the raw view of the execute structure is here and easier to make out what is going on](https://raw.githubusercontent.com/two-dogs/the-kennel/master/option-print.md)
